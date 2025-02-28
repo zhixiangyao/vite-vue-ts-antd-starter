@@ -1,0 +1,9 @@
+/dist/*
+/dist-ssr/*
+/public/*
+/.vscode/*
+/node_modules/*
+
+**/*.html
+**/*.js
+**/*.mjs

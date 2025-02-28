@@ -1,0 +1,11 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.useFlatConfig": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "css.customData": [".vscode/unocss.json"],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}

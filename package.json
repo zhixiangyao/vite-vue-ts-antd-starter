@@ -1,0 +1,73 @@
+{
+  "name": "vite-vue-ts-antd-starter",
+  "type": "module",
+  "version": "0.1.0",
+  "author": "zhixiangyao <blueskyzx@icloud.com> <https://github.com/zhixiangyao>",
+  "license": "MIT",
+  "homepage": "https://github.com/zhixiangyao/vite-vue-ts-antd-starter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhixiangyao/vite-vue-ts-antd-starter.git"
+  },
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vue-tsc && vite build",
+    "preview": "npm run build && vite preview",
+    "preview:dist": "vite preview",
+    "lint": "eslint --cache --cache-location node_modules/.cache/eslint/",
+    "lint:stylelint": "stylelint \"./**/*.{vue,postcss,css}\" --cache --cache-location node_modules/.cache/stylelint/",
+    "lint-staged": "lint-staged",
+    "postinstall": "simple-git-hooks"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "7.0.1",
+    "@vueuse/core": "12.7.0",
+    "ant-design-vue": "4.2.6",
+    "pinia": "2.3.0",
+    "vue": "3.5.13",
+    "vue-draggable-plus": "0.6.0",
+    "vue-router": "4.5.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "3.13.0",
+    "@types/node": "22.10.5",
+    "@types/nprogress": "0.2.3",
+    "@typescript-eslint/eslint-plugin": "8.19.1",
+    "@unocss/preset-rem-to-px": "66.1.0-beta.3",
+    "@unocss/reset": "66.1.0-beta.3",
+    "@vitejs/plugin-vue": "5.2.1",
+    "@vitejs/plugin-vue-jsx": "4.1.1",
+    "@vue/compiler-sfc": "3.5.13",
+    "autoprefixer": "10.4.20",
+    "eslint": "9.18.0",
+    "lint-staged": "15.3.0",
+    "postcss-html": "1.7.0",
+    "postcss-load-config": "6.0.1",
+    "simple-git-hooks": "2.11.1",
+    "stylelint": "16.12.0",
+    "stylelint-config-recommended-vue": "1.5.0",
+    "stylelint-config-standard": "36.0.1",
+    "stylelint-order": "6.0.4",
+    "typescript": "5.7.3",
+    "unocss": "66.1.0-beta.3",
+    "unplugin-auto-import": "19.1.1",
+    "unplugin-vue-components": "^28.4.1",
+    "vite": "6.2.0",
+    "vue-tsc": "2.2.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": [
+      "eslint --cache --cache-location node_modules/.cache/eslint/"
+    ],
+    "./**/*.{vue,postcss,css}": [
+      "stylelint --cache --cache-location node_modules/.cache/stylelint/"
+    ]
+  }
+}
