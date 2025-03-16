@@ -9,10 +9,10 @@
         "ignorePseudoClasses": ["global", "deep"]
       }
     ],
-    "at-rule-no-unknown": [
+    "at-rule-no-deprecated": [
       true,
       {
-        "ignoreAtRules": ["function", "if", "each", "include", "mixin"]
+        "ignoreAtRules": ["apply"]
       }
     ],
     "no-empty-source": null,
