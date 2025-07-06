@@ -11,8 +11,6 @@ pnpm-lock.yaml
 auto-imports.d.ts
 components.d.ts
 
-test/upload-server/static
-
 # Log files
 npm-debug.log*
 yarn-debug.log*
