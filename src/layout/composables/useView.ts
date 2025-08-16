@@ -13,7 +13,7 @@ export interface TView {
 
 export function useView() {
   const list = useStorage<TView[]>('view-list', [])
-  const activity = ref<TView | null>(null)
+  const activity = ref<TView | null | undefined>(null)
   const route = useRoute()
   const router = useRouter()
 
@@ -33,7 +33,7 @@ export function useView() {
 
         const data = list.value[position]
         activity.value = data
-        router.push({ name: data.name })
+        router.push({ name: data?.name })
       }
     }
   }

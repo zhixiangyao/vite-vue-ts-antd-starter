@@ -13,7 +13,7 @@ const token = reactive<Partial<AliasToken>>({
 const seed = computed<SeedToken>(() => ({ ...theme.defaultSeed, ...token }))
 const tokenDark = computed(() => theme.darkAlgorithm(seed.value))
 const tokenLight = computed(() => theme.defaultAlgorithm(seed.value))
-const defaultTheme = computed<ConfigProviderProps['theme']>(() => {
+const defaultTheme = computed<NonNullable<ConfigProviderProps['theme']>>(() => {
   return {
     token: isDark.value ? tokenDark.value : tokenLight.value,
   }

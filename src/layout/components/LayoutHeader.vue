@@ -18,7 +18,7 @@ export const layoutHeaderRightSlotRef = ref<HTMLDivElement>()
 
 <template>
   <header :style="{ backgroundColor: token.colorBgContainer }">
-    <div :title="route.name?.toString()">
+    <div :title="route.name?.toString() ?? ''">
       {{ view?.title ?? route.name }}
     </div>
 

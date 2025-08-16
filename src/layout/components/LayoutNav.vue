@@ -5,7 +5,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { views } from '~/router'
 
 defineOptions({ name: 'LayoutNav' })
-defineProps<{ collapsed?: boolean }>()
+withDefaults(defineProps<{ collapsed?: boolean }>(), { collapsed: false })
 
 const items = views.map<ItemType>(view => ({
   key: view.name,

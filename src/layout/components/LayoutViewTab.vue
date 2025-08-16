@@ -19,7 +19,7 @@ function handleContextMenu(event: MouseEvent, view: TView, index: number) {
   event.stopPropagation()
   const elementLi = itemRefs.value?.[index]
   if (elementLi) {
-    const elementLiRect = elementLi.getClientRects()[0]
+    const elementLiRect = elementLi.getClientRects()[0] ?? { left: 0, top: 0, width: 0, height: 0 }
     contextState.open = true
     contextState.view = view
     contextState.x = elementLiRect.left + elementLiRect.width
@@ -39,7 +39,7 @@ function handleContextMenu(event: MouseEvent, view: TView, index: number) {
       >
         <Tag
           class="cursor-pointer select-none m-0"
-          :color="item.name === use.activity.value?.name ? token.colorPrimary : void 0"
+          :color="item.name === use.activity.value?.name ? token.colorPrimary : 'default'"
           :closable="list.length !== 1"
           :bordered="false"
           @close="() => use.handleClose(item)"
