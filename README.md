@@ -2,19 +2,20 @@
 
 This template will help you start developing with Vue3 VueRouter Pinia TypeScript UnoCSS in Vite.
 
-**Editor:**
+- **Editor:**
 
-- [VSCode](https://code.visualstudio.com/)
+  - [VSCode](https://code.visualstudio.com/)
 
-**VSCode extension:**
+- **VSCode extension:**
 
-- [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
-- [UnoCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.unocss)
+  - Vue
+  - [UnoCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.unocss)
 
-**Development ENV:**
+- **Development ENV:**
 
-- NodeJs
-- Git
+  - git => 2.39.0
+  - node => 24.11.0
+  - pnpm => 10.21.0
 
 ## Clone
 
