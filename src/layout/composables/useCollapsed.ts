@@ -5,7 +5,7 @@ export function useCollapsed() {
   const size = useWindowSize()
   const debouncedWidth = refDebounced(size.width, 500)
 
-  watch(debouncedWidth, width => (collapsed.value = width <= 1024))
+  watch(debouncedWidth, (width) => (collapsed.value = width <= 1024))
 
   return collapsed
 }

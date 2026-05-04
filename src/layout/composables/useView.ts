@@ -23,7 +23,7 @@ export function useView() {
   }
 
   function handleClose(view: TView) {
-    const index = list.value.findIndex(item => item.path === view.path)
+    const index = list.value.findIndex((item) => item.path === view.path)
 
     if (index !== -1) {
       list.value.splice(index, 1)
@@ -50,7 +50,9 @@ export function useView() {
         query: to.query,
       }
       activity.value = data
-      list.value.findIndex(item => item.path === data.path) === -1 && list.value.push(data)
+      if (list.value.findIndex((item) => item.path === data.path) === -1) {
+        list.value.push(data)
+      }
     },
     {
       immediate: true,

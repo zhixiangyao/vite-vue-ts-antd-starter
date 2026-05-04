@@ -9,7 +9,7 @@ defineOptions({ name: 'LayoutHeader' })
 const { token } = theme.useToken()
 const route = useRoute()
 const isDark = useDark()
-const view = computed(() => views.find(view => view.name === route.name))
+const view = computed(() => views.find((view) => view.name === route.name))
 </script>
 
 <script lang="ts">

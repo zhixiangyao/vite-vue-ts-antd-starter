@@ -11,7 +11,7 @@ const checked = defineModel<boolean>('checked', { default: false })
 
 <template>
   <label for="toggle" class="w-switch">
-    <input id="toggle" type="checkbox" :checked="checked" class="sr-only" @change="checked = !checked">
+    <input id="toggle" type="checkbox" :checked="checked" class="sr-only" @change="checked = !checked" />
     <div class="bg" />
     <div class="dot" />
   </label>

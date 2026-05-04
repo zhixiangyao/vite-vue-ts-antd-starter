@@ -7,7 +7,7 @@ import { views } from '~/router'
 defineOptions({ name: 'LayoutNav' })
 withDefaults(defineProps<{ collapsed?: boolean }>(), { collapsed: false })
 
-const items = views.map<ItemType>(view => ({
+const items = views.map<ItemType>((view) => ({
   key: view.name,
   icon: view.icon,
   label: view.title,
@@ -23,7 +23,7 @@ const handleClick: MenuProps['onClick'] = (menuInfo) => {
   router.push({ name: menuInfo.key.toString() })
 }
 
-watch(route, to => to.name && (selectedKeys.value = [to.name.toString()]), { immediate: true })
+watch(route, (to) => to.name && (selectedKeys.value = [to.name.toString()]), { immediate: true })
 </script>
 
 <template>

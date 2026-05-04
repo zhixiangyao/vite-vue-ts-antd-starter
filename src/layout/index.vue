@@ -12,7 +12,7 @@ defineOptions({ name: 'Layout' })
 
 const collapsed = useCollapsed()
 const view = useView()
-const cachedViewNames = computed(() => view.list.value.map(item => item.name))
+const cachedViewNames = computed(() => view.list.value.map((item) => item.name))
 </script>
 
 <template>

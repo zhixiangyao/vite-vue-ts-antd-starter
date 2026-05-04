@@ -59,10 +59,11 @@ function handleContextMenu(event: MouseEvent, view: TView, index: number) {
     v-model:open="contextState.open"
     :x="contextState.x"
     :y="contextState.y"
-    @close="() => {
-      contextState.open = false;
-      use.handleClose(contextState.view!)
-    }
+    @close="
+      () => {
+        contextState.open = false
+        use.handleClose(contextState.view!)
+      }
     "
   />
 </template>

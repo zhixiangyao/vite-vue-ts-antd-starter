@@ -27,7 +27,7 @@ const router = createRouter({
       name: 'Home',
       component: () => import('~/layout/index.vue'),
       redirect: () => ({ name: views[0]?.name }),
-      children: views.map<RouteRecordRaw>(view => ({
+      children: views.map<RouteRecordRaw>((view) => ({
         path: view.path,
         name: view.name,
         component: view.component,

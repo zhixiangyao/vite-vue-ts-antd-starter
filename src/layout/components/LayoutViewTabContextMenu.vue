@@ -29,12 +29,8 @@ onClickOutside(contextRef, () => (open.value = false))
     class="context-menu z-1000 fixed p-1 rounded-sm flex flex-col gap-1"
     :style="{ top: `${y ?? 0}px`, left: `${x ?? 0}px`, backgroundColor: token.colorBgSpotlight }"
   >
-    <Button size="small" w-25>
-      刷新
-    </Button>
-    <Button size="small" w-25 @click="$emit('close')">
-      关闭当前
-    </Button>
+    <Button size="small" w-25> 刷新 </Button>
+    <Button size="small" w-25 @click="$emit('close')"> 关闭当前 </Button>
   </div>
 </template>
 
