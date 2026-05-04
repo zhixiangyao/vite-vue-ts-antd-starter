@@ -1,48 +1,48 @@
 # Vite + Vue 3 + VueRouter + Pinia + TypeScript + UnoCSS + AntdUI
 
-English · [中文](./README-zh.md)
+[English](./README.md) · 中文
 
-This template will help you start developing with Vue3 VueRouter Pinia TypeScript UnoCSS AntdUI in Vite.
+这个模板可以帮助你在 Vite 中快速开始使用 Vue3、VueRouter、Pinia、TypeScript、UnoCSS 和 AntdUI 开发。
 
-- **Editor:**
+- **编辑器：**
   - [VSCode](https://code.visualstudio.com/)
 
-- **VSCode extension:**
+- **VSCode 扩展：**
   - [Vue](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
   - [Oxc](https://marketplace.visualstudio.com/items?itemName=oxc.oxc-vscode)
   - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
   - [UnoCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.unocss)
 
-- **Development ENV:**
+- **开发环境：**
   - git => 2.39.0
   - node => 25.9.0
   - pnpm => 11.0.3
 
-## Clone
+## 克隆项目
 
 ```shell
 git clone git@github.com:zhixiangyao/vite-vue-ts-antd-starter.git
 cd vite-vue-ts-antd-starter
-pnpm i # If not install pnpm, please run: npm install -g pnpm
+pnpm i # 如果还没有安装 pnpm，请先执行：npm install -g pnpm
 ```
 
-## Usage
+## 使用
 
-### Development
+### 开发
 
-click it http://localhost:3000
+点击 http://localhost:3000
 
 ```shell
 pnpm dev
 ```
 
-### Build
+### 构建
 
 ```shell
 pnpm build
 ```
 
-### Check
+### 检查
 
 ```shell
 pnpm typecheck

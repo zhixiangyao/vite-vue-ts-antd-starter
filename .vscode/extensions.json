@@ -1,6 +1,3 @@
 {
-  "recommendations": [
-    "vue.volar",
-    "antfu.unocss"
-  ]
+  "recommendations": ["vue.volar", "oxc.oxc-vscode", "stylelint.vscode-stylelint", "antfu.unocss"]
 }
