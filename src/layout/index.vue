@@ -37,8 +37,7 @@ const cachedViewNames = computed(() => view.list.value.map((item) => item.name))
 
 <style scoped>
 .layout {
-  @apply h-screen w-screen;
-  @apply grid gap-1;
+  --at-apply: h-screen w-screen grid gap-1;
 
   grid-template-columns: v-bind('`${collapsed ? 80 : 200}px 1fr`');
   grid-template-rows: 40px 30px 1fr;

@@ -70,7 +70,7 @@ function handleContextMenu(event: MouseEvent, view: TView, index: number) {
 
 <style scoped>
 ul {
-  @apply grid-col-start-2 grid-col-end-3 grid-row-start-2 grid-row-end-3;
-  @apply flex items-center p-1 text-xs overflow-hidden;
+  --at-apply: grid-col-start-2 grid-col-end-3 grid-row-start-2 grid-row-end-3 flex items-center p-1 text-xs
+    overflow-hidden;
 }
 </style>

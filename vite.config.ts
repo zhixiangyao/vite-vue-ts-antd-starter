@@ -48,7 +48,12 @@ const baseConfig: UserConfigExport = {
 
 export default ({ command }: ConfigEnv) => {
   if (command === 'serve') {
-    return defineConfig({ ...baseConfig })
+    return defineConfig({
+      ...baseConfig,
+      server: {
+        allowedHosts: true,
+      },
+    })
   } else {
     return defineConfig({ ...baseConfig })
   }

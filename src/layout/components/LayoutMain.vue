@@ -19,7 +19,6 @@ const { token } = theme.useToken()
 
 <style scoped>
 main {
-  @apply grid-col-start-2 grid-col-end-3 grid-row-start-3 grid-row-end-4;
-  @apply p-1 overflow-auto;
+  --at-apply: grid-col-start-2 grid-col-end-3 grid-row-start-3 grid-row-end-4 p-1 overflow-auto;
 }
 </style>

@@ -2,9 +2,5 @@
   "editor.defaultFormatter": "oxc.oxc-vscode",
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "css.customData": [".vscode/unocss.json"],
-  "files.associations": {
-    "*.css": "tailwindcss"
-  }
+  "js/ts.tsdk.path": "node_modules/typescript/lib"
 }

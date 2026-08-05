@@ -43,11 +43,10 @@ watch(route, (to) => to.name && (selectedKeys.value = [to.name.toString()]), { i
 
 <style scoped>
 nav {
-  @apply grid-col-start-1 grid-col-end-2 grid-row-start-1 grid-row-end-4;
-  @apply flex flex-col flex-shrink-0;
+  --at-apply: grid-col-start-1 grid-col-end-2 grid-row-start-1 grid-row-end-4 flex flex-col flex-shrink-0;
 
   :deep(.ant-menu-title-content) {
-    @apply select-none;
+    --at-apply: select-none;
   }
 }
 </style>

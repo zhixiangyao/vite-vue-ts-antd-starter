@@ -15,11 +15,16 @@ import AntProvider from '~/components/AntProvider.vue'
   --light-bg-color: #f5f5f5;
 }
 
-html #app {
+html,
+body {
+  --at-apply: overflow-hidden w-screen h-screen;
+}
+
+html {
   background-color: var(--light-bg-color);
 }
 
-html.dark #app {
+html.dark {
   background-color: var(--dark-bg-color);
 }
 

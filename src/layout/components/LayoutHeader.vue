@@ -32,7 +32,7 @@ export const layoutHeaderRightSlotRef = ref<HTMLDivElement>()
 
 <style scoped>
 header {
-  @apply grid-col-start-2 grid-col-end-3 grid-row-start-1 grid-row-end-2;
-  @apply flex items-center justify-between font-500 p-1;
+  --at-apply: grid-col-start-2 grid-col-end-3 grid-row-start-1 grid-row-end-2 flex items-center justify-between font-500
+    p-1;
 }
 </style>

@@ -19,20 +19,20 @@ const checked = defineModel<boolean>('checked', { default: false })
 
 <style scoped>
 .w-switch {
-  @apply flex items-center cursor-pointer relative;
+  --at-apply: flex items-center cursor-pointer relative;
 
   > input:checked ~ .dot {
     background-color: v-bind(color);
 
-    @apply translate-x-5;
+    --at-apply: translate-x-5;
   }
 
   > .bg {
-    @apply block bg-gray-600 w-11 h-6 rounded-full;
+    --at-apply: block bg-gray-600 w-11 h-6 rounded-full;
   }
 
   > .dot {
-    @apply absolute left-1 top-1 bg-white w-4 h-4 rounded-full;
+    --at-apply: absolute left-1 top-1 bg-white w-4 h-4 rounded-full;
   }
 }
 </style>
