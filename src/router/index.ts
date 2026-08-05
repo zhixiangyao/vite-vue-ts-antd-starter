@@ -1,5 +1,5 @@
-import type { RouteRecordRaw } from 'vue-router'
 import { FileWordOutlined, UnorderedListOutlined } from '@ant-design/icons-vue'
+import type { RouteRecordRaw } from 'vue-router'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 export const views = [

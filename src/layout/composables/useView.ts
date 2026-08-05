@@ -1,5 +1,5 @@
-import type { LocationQuery, RouteMeta, RouteParamsGeneric } from 'vue-router'
 import { useStorage } from '@vueuse/core'
+import type { LocationQuery, RouteMeta, RouteParamsGeneric } from 'vue-router'
 import { useRoute, useRouter } from 'vue-router'
 
 export interface TView {

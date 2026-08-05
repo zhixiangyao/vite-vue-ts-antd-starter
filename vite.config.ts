@@ -1,10 +1,11 @@
-import type { ConfigEnv, UserConfigExport } from 'vite'
 import { resolve } from 'node:path'
+
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import type { ConfigEnv, UserConfigExport } from 'vite'
 import { defineConfig } from 'vite'
 
 const r = (...args: string[]) => resolve(__dirname, ...args)

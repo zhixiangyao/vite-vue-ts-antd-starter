@@ -1,8 +1,10 @@
 <script lang="ts" setup>
-import type { TView, useView } from '../composables/useView'
 import { Tag, theme } from 'ant-design-vue'
 import { VueDraggable } from 'vue-draggable-plus'
+
 import { views } from '~/router'
+
+import type { TView, useView } from '../composables/useView'
 import LayoutViewTabContextMenu from './LayoutViewTabContextMenu.vue'
 
 defineOptions({ name: 'LayoutViewTab' })

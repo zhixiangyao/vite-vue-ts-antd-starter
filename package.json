@@ -1,19 +1,14 @@
 {
   "name": "vite-vue-ts-antd-starter",
-  "type": "module",
   "version": "0.1.0",
-  "author": "zhixiangyao <blueskyzx@icloud.com> <https://github.com/zhixiangyao>",
-  "license": "MIT",
   "homepage": "https://github.com/zhixiangyao/vite-vue-ts-antd-starter",
+  "license": "MIT",
+  "author": "zhixiangyao <blueskyzx@icloud.com> <https://github.com/zhixiangyao>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhixiangyao/vite-vue-ts-antd-starter.git"
   },
-  "packageManager": "pnpm@11.5.2",
-  "engines": {
-    "node": ">=26.2.0",
-    "pnpm": ">=11.5.2"
-  },
+  "type": "module",
   "scripts": {
     "dev": "vite --host",
     "dev:code-server": "vite --host --base=/absproxy/5173/",
@@ -75,5 +70,10 @@
     "**/*.{vue,css}": [
       "stylelint --cache --cache-location node_modules/.cache/stylelint/"
     ]
-  }
+  },
+  "engines": {
+    "node": ">=26.5.1",
+    "pnpm": ">=11.20.0"
+  },
+  "packageManager": "pnpm@11.20.0"
 }
