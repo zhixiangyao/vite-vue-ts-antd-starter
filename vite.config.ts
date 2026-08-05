@@ -8,7 +8,7 @@ import Components from 'unplugin-vue-components/vite'
 import type { ConfigEnv, UserConfigExport } from 'vite'
 import { defineConfig } from 'vite'
 
-const r = (...args: string[]) => resolve(__dirname, ...args)
+const r = (...args: string[]) => resolve(import.meta.dirname, ...args)
 
 const baseConfig: UserConfigExport = {
   plugins: [
@@ -41,9 +41,6 @@ const baseConfig: UserConfigExport = {
     modules: {
       localsConvention: 'camelCaseOnly',
     },
-  },
-  optimizeDeps: {
-    include: ['vue', 'vue-router', '@vueuse/core', 'ant-design-vue', '@ant-design/icons-vue'],
   },
 }
 
