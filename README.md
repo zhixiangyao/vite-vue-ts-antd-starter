@@ -10,7 +10,6 @@ This template will help you start developing with Vue3 VueRouter Pinia TypeScrip
 - **VSCode extension:**
   - [Vue](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
   - [Oxc](https://marketplace.visualstudio.com/items?itemName=oxc.oxc-vscode)
-  - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
   - [UnoCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.unocss)
 
 - **Development ENV:**

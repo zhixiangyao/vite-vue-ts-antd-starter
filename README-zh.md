@@ -10,7 +10,6 @@
 - **VSCode 扩展：**
   - [Vue](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
   - [Oxc](https://marketplace.visualstudio.com/items?itemName=oxc.oxc-vscode)
-  - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
   - [UnoCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.unocss)
 
 - **开发环境：**
