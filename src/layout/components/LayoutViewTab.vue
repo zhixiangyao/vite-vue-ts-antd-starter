@@ -7,8 +7,12 @@ import { views } from '~/router'
 import type { TView, useView } from '../composables/useView'
 import LayoutViewTabContextMenu from './LayoutViewTabContextMenu.vue'
 
+interface Props {
+  use: ReturnType<typeof useView>
+}
+
 defineOptions({ name: 'LayoutViewTab' })
-const props = defineProps<{ use: ReturnType<typeof useView> }>()
+const props = defineProps<Props>()
 
 const viewsMap = Object.fromEntries(views.map(({ name, title, icon }) => [name, { title, icon }]))
 const list = toRef(props.use, 'list')
@@ -31,7 +35,10 @@ function handleContextMenu(event: MouseEvent, view: TView, index: number) {
 </script>
 
 <template>
-  <ul :style="{ backgroundColor: token.colorBgContainer }">
+  <ul
+    class="grid-col-start-2 grid-col-end-3 grid-row-start-2 grid-row-end-3 flex items-center p-1 text-xs overflow-hidden"
+    :style="{ backgroundColor: token.colorBgContainer }"
+  >
     <VueDraggable v-model="list" :animation="150" class="flex gap-2">
       <li
         v-for="(item, index) in list"
@@ -69,10 +76,3 @@ function handleContextMenu(event: MouseEvent, view: TView, index: number) {
     "
   />
 </template>
-
-<style scoped>
-ul {
-  --at-apply: grid-col-start-2 grid-col-end-3 grid-row-start-2 grid-row-end-3 flex items-center p-1 text-xs
-    overflow-hidden;
-}
-</style>

@@ -16,7 +16,13 @@ const cachedViewNames = computed(() => view.list.value.map((item) => item.name))
 </script>
 
 <template>
-  <div class="layout">
+  <div
+    class="h-screen w-screen grid gap-1"
+    :style="{
+      gridTemplateColumns: `${collapsed ? 80 : 200}px 1fr`,
+      gridTemplateRows: '40px 30px 1fr',
+    }"
+  >
     <LayoutNav :collapsed="collapsed">
       <template #top>
         <HeaderTop :collapsed="collapsed" />
@@ -34,12 +40,3 @@ const cachedViewNames = computed(() => view.list.value.map((item) => item.name))
     <LayoutMain :cached-view-names="cachedViewNames" />
   </div>
 </template>
-
-<style scoped>
-.layout {
-  --at-apply: h-screen w-screen grid gap-1;
-
-  grid-template-columns: v-bind('`${collapsed ? 80 : 200}px 1fr`');
-  grid-template-rows: 40px 30px 1fr;
-}
-</style>

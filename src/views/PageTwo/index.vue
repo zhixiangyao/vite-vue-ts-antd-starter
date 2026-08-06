@@ -13,7 +13,7 @@ const showTeleport = computed(() => layoutHeaderRightSlotRef.value && route.name
 
 <template>
   <Teleport v-if="showTeleport" :to="layoutHeaderRightSlotRef">
-    <Button size="small"> PageTwo </Button>
+    <Button size="small">PageTwo</Button>
   </Teleport>
 
   <div>2</div>

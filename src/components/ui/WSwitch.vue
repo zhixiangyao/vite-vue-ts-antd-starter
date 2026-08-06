@@ -10,29 +10,15 @@ const checked = defineModel<boolean>('checked', { default: false })
 </script>
 
 <template>
-  <label for="toggle" class="w-switch">
+  <label for="toggle" class="flex items-center cursor-pointer relative">
     <input id="toggle" type="checkbox" :checked="checked" class="sr-only" @change="checked = !checked" />
-    <div class="bg" />
-    <div class="dot" />
+    <div class="block bg-gray-600 w-11 h-6 rounded-full" />
+    <div
+      class="absolute left-1 top-1 w-4 h-4 rounded-full"
+      :class="[checked && 'translate-x-5']"
+      :style="{
+        backgroundColor: checked ? color : 'white',
+      }"
+    />
   </label>
 </template>
-
-<style scoped>
-.w-switch {
-  --at-apply: flex items-center cursor-pointer relative;
-
-  > input:checked ~ .dot {
-    background-color: v-bind(color);
-
-    --at-apply: translate-x-5;
-  }
-
-  > .bg {
-    --at-apply: block bg-gray-600 w-11 h-6 rounded-full;
-  }
-
-  > .dot {
-    --at-apply: absolute left-1 top-1 bg-white w-4 h-4 rounded-full;
-  }
-}
-</style>

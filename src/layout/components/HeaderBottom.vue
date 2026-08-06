@@ -9,22 +9,11 @@ const collapsed = defineModel<boolean>('collapsed', { default: false })
 </script>
 
 <template>
-  <div class="header-bottom" @click="collapsed = !collapsed">
+  <div
+    class="flex justify-center items-center mt-auto px-1 h-10 cursor-pointer select-none border-t-4 border-t-solid border-t-[color:var(--light-bg-color)] dark:border-t-[color:var(--dark-bg-color)]"
+    @click="collapsed = !collapsed"
+  >
     <MenuUnfoldOutlined v-if="collapsed" :style="{ color: token.colorPrimary }" />
     <MenuFoldOutlined v-else :style="{ color: token.colorPrimary }" />
   </div>
 </template>
-
-<style scoped>
-.header-bottom {
-  --at-apply: flex justify-center items-center mt-auto px-1 h-10 cursor-pointer select-none border-t-4 border-t-solid;
-}
-
-html .header-bottom {
-  border-top-color: var(--light-bg-color);
-}
-
-html.dark .header-bottom {
-  border-top-color: var(--dark-bg-color);
-}
-</style>

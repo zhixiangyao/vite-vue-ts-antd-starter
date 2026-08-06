@@ -2,8 +2,12 @@
 import { useAnimate } from '@vueuse/core'
 import { theme } from 'ant-design-vue'
 
+interface Props {
+  collapsed: boolean
+}
+
 defineOptions({ name: 'HeaderTop' })
-const props = defineProps<{ collapsed: boolean }>()
+const props = defineProps<Props>()
 
 const { token } = theme.useToken()
 const textRef = ref<HTMLElement>()

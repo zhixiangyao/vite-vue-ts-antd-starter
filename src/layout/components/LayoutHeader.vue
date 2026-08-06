@@ -18,7 +18,10 @@ export const layoutHeaderRightSlotRef = ref<HTMLDivElement>()
 </script>
 
 <template>
-  <header :style="{ backgroundColor: token.colorBgContainer }">
+  <header
+    class="grid-col-start-2 grid-col-end-3 grid-row-start-1 grid-row-end-2 flex items-center justify-between font-500 p-1"
+    :style="{ backgroundColor: token.colorBgContainer }"
+  >
     <div :title="route.name?.toString() ?? ''">
       {{ view?.title ?? route.name }}
     </div>
@@ -30,10 +33,3 @@ export const layoutHeaderRightSlotRef = ref<HTMLDivElement>()
     </div>
   </header>
 </template>
-
-<style scoped>
-header {
-  --at-apply: grid-col-start-2 grid-col-end-3 grid-row-start-1 grid-row-end-2 flex items-center justify-between font-500
-    p-1;
-}
-</style>

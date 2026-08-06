@@ -5,8 +5,12 @@ import { useRoute, useRouter } from 'vue-router'
 
 import { views } from '~/router'
 
+interface Props {
+  collapsed?: boolean
+}
+
 defineOptions({ name: 'LayoutNav' })
-withDefaults(defineProps<{ collapsed?: boolean }>(), { collapsed: false })
+withDefaults(defineProps<Props>(), { collapsed: false })
 
 const items = views.map<ItemType>((view) => ({
   key: view.name,
@@ -28,7 +32,10 @@ watch(route, (to) => to.name && (selectedKeys.value = [to.name.toString()]), { i
 </script>
 
 <template>
-  <nav :style="{ backgroundColor: token.colorBgContainer }">
+  <nav
+    class="grid-col-start-1 grid-col-end-2 grid-row-start-1 grid-row-end-4 flex flex-col flex-shrink-0"
+    :style="{ backgroundColor: token.colorBgContainer }"
+  >
     <slot name="top" />
     <Menu
       :selected-keys="selectedKeys"
@@ -41,13 +48,3 @@ watch(route, (to) => to.name && (selectedKeys.value = [to.name.toString()]), { i
     <slot name="bottom" />
   </nav>
 </template>
-
-<style scoped>
-nav {
-  --at-apply: grid-col-start-1 grid-col-end-2 grid-row-start-1 grid-row-end-4 flex flex-col flex-shrink-0;
-
-  :deep(.ant-menu-title-content) {
-    --at-apply: select-none;
-  }
-}
-</style>

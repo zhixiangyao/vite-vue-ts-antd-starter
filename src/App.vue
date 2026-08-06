@@ -7,28 +7,3 @@ import AntProvider from '~/components/AntProvider.vue'
     <router-view />
   </AntProvider>
 </template>
-
-<style>
-:root {
-  --dark-bg-color: #000;
-  --dark-second-bg-color: #282828;
-  --light-bg-color: #f5f5f5;
-}
-
-html,
-body {
-  --at-apply: overflow-hidden w-screen h-screen;
-}
-
-html {
-  background-color: var(--light-bg-color);
-}
-
-html.dark {
-  background-color: var(--dark-bg-color);
-}
-
-html.dark * {
-  scrollbar-color: var(--dark-bg-color) var(--dark-second-bg-color);
-}
-</style>

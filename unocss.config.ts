@@ -1,9 +1,9 @@
-import { presetUno, transformerDirectives } from 'unocss'
+import { presetUno } from 'unocss'
 import { defineConfig } from 'unocss/vite'
 
 export default defineConfig({
   presets: [presetUno()],
-  transformers: [transformerDirectives()],
+  transformers: [],
   theme: {
     breakpoints: {
       md: '768px',
